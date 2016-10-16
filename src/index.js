@@ -67,6 +67,8 @@ function makeSchema(schemaOptions, schemaExtension) {
   return schemaExtension ? schema.concat(schemaExtension) : schema
 }
 
+module.exports = makeSchema
+
 function validate(config, options = {}) {
   const {
     // Don't return the config object and throw on error, but just return the validation result
